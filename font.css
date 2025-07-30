@@ -1,0 +1,10 @@
+/* Custom styles for the Inter font */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Custom styling for focus states to improve accessibility and visual feedback */
+*:focus {
+    outline: 2px solid #3b82f6; /* Blue outline */
+    outline-offset: 2px;
+}

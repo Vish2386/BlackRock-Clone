@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackRock - Simplified Clone</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-10 sticky top-0 z-50 rounded-b-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="flex items-center space-x-2">
+                <img src="https://placehold.co/40x40/000000/FFFFFF?text=BR" alt="BlackRock Logo" class="h-10 w-10 rounded-full">
+                <span class="text-2xl font-bold text-gray-900">BlackRock</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-700 hover:text-blue-600 font-semibold transition duration-300 ease-in-out rounded-md px-3 py-2">About Us</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 font-semibold transition duration-300 ease-in-out rounded-md px-3 py-2">Investment Solutions</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 font-semibold transition duration-300 ease-in-out rounded-md px-3 py-2">Insights</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 font-semibold transition duration-300 ease-in-out rounded-md px-3 py-2">Careers</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600 font-semibold transition duration-300 ease-in-out rounded-md px-3 py-2">Contact</a>
+            </nav>
+
+            <!-- Search Icon and Mobile Menu Button -->
+            <div class="flex items-center space-x-4">
+                <button class="text-gray-700 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-md p-2" aria-label="Search">
+                    <i class="fas fa-search text-xl"></i>
+                </button>
+                <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-md p-2" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation (Hidden by default) -->
+        <nav id="mobile-menu" class="md:hidden mt-4 hidden bg-white rounded-lg shadow-lg py-2">
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">About Us</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">Investment Solutions</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">Insights</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">Careers</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center h-96 flex items-center justify-center text-white rounded-b-lg shadow-lg mx-4 md:mx-auto mt-6"
+        style="background-image: url('https://placehold.co/1200x500/333333/FFFFFF?text=Driving+Financial+Well-being');">
+        <div class="absolute inset-0 bg-black opacity-50 rounded-b-lg"></div>
+        <div class="relative z-10 text-center p-6">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">Driving Financial Well-being</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+                Discover our insights, investment solutions, and commitment to a better financial future.
+            </p>
+            <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-300">
+                Learn More
+            </a>
+        </div>
+    </section>
+
+    <!-- Key Offerings/Sections -->
+    <section class="container mx-auto py-16 px-6 md:px-10">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Our Core Strengths</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                <i class="fas fa-chart-line text-blue-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-3 text-gray-900">Investment Management</h3>
+                <p class="text-gray-600">
+                    Expert management across asset classes, delivering tailored solutions for clients worldwide.
+                </p>
+                <a href="#" class="mt-4 inline-block text-blue-600 hover:underline font-medium">Read More &rarr;</a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                <i class="fas fa-lightbulb text-blue-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-3 text-gray-900">Market Insights</h3>
+                <p class="text-gray-600">
+                    Stay informed with our latest research, analyses, and perspectives on global markets.
+                </p>
+                <a href="#" class="mt-4 inline-block text-blue-600 hover:underline font-medium">Read More &rarr;</a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                <i class="fas fa-users text-blue-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-3 text-gray-900">Client Focus</h3>
+                <p class="text-gray-600">
+                    Building strong relationships and understanding unique needs to provide exceptional service.
+                </p>
+                <a href="#" class="mt-4 inline-block text-blue-600 hover:underline font-medium">Read More &rarr;</a>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                <i class="fas fa-globe-americas text-blue-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-3 text-gray-900">Global Presence</h3>
+                <p class="text-gray-600">
+                    Operating across continents, serving clients with local expertise and global reach.
+                </p>
+                <a href="#" class="mt-4 inline-block text-blue-600 hover:underline font-medium">Read More &rarr;</a>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                <i class="fas fa-handshake text-blue-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-3 text-gray-900">Sustainable Investing</h3>
+                <p class="text-gray-600">
+                    Integrating ESG factors to create long-term value and positive impact.
+                </p>
+                <a href="#" class="mt-4 inline-block text-blue-600 hover:underline font-medium">Read More &rarr;</a>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                <i class="fas fa-laptop-code text-blue-600 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-3 text-gray-900">Technology & Innovation</h3>
+                <p class="text-gray-600">
+                    Leveraging cutting-edge technology to enhance investment processes and client experience.
+                </p>
+                <a href="#" class="mt-4 inline-block text-blue-600 hover:underline font-medium">Read More &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-gray-300 py-10 px-6 md:px-10 mt-12 rounded-t-lg">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <!-- Footer Column 1 -->
+            <div>
+                <h4 class="text-xl font-bold mb-4 text-white">BlackRock</h4>
+                <p class="text-sm leading-relaxed">
+                    Driving financial well-being for our clients.
+                </p>
+            </div>
+
+            <!-- Footer Column 2 -->
+            <div>
+                <h4 class="text-lg font-semibold mb-4 text-white">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-blue-400 transition duration-200">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition duration-200">Terms of Use</a></li>
+                    <li><a href="#" class="hover:text-blue-400 transition duration-200">Accessibility</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer Column 3 -->
+            <div>
+                <h4 class="text-lg font-semibold mb-4 text-white">Connect With Us</h4>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <a href="#" class="text-gray-300 hover:text-blue-400 text-2xl transition duration-200" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-blue-400 text-2xl transition duration-200" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-blue-400 text-2xl transition duration-200" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-500">
+            &copy; 2025 BlackRock, Inc. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
